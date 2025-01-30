@@ -15,11 +15,11 @@ export default function AuthenticatedLayout({ header, children }) {
         <div className="min-h-screen bg-gray-100">
             <nav className="border-b border-gray-100 bg-white">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="flex h-16 justify-between">
+                    <div className="flex h-14 justify-between">
                         <div className="flex">
                             <div className="flex shrink-0 items-center">
                                 <Link href="/">
-                                    <ApplicationLogo className="block h-9 w-auto fill-current text-gray-800" />
+                                    <img id="logo" className="w-11" src="img/logo.png" alt="Logo" />
                                 </Link>
                             </div>
 
@@ -28,7 +28,7 @@ export default function AuthenticatedLayout({ header, children }) {
                                     href={route('dashboard')}
                                     active={route().current('dashboard')}
                                 >
-                                    Dashboard
+                                    Dashboard 
                                 </NavLink>
                             </div>
                         </div>

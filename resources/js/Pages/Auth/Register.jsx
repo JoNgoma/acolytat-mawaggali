@@ -27,7 +27,7 @@ export default function Register() {
 
             <form onSubmit={submit}>
                 <div>
-                    <InputLabel htmlFor="name" value="Name" />
+                    <InputLabel htmlFor="name" value="Noms" />
 
                     <TextInput
                         id="name"
@@ -44,7 +44,7 @@ export default function Register() {
                 </div>
 
                 <div className="mt-4">
-                    <InputLabel htmlFor="email" value="Email" />
+                    <InputLabel htmlFor="email" value="Adresse mail" />
 
                     <TextInput
                         id="email"
@@ -61,7 +61,7 @@ export default function Register() {
                 </div>
 
                 <div className="mt-4">
-                    <InputLabel htmlFor="password" value="Password" />
+                    <InputLabel htmlFor="password" value="Mot de passe" />
 
                     <TextInput
                         id="password"
@@ -80,7 +80,7 @@ export default function Register() {
                 <div className="mt-4">
                     <InputLabel
                         htmlFor="password_confirmation"
-                        value="Confirm Password"
+                        value="Confirmer mot de passe"
                     />
 
                     <TextInput
@@ -102,19 +102,20 @@ export default function Register() {
                     />
                 </div>
 
-                <div className="mt-4 flex items-center justify-end">
+                <div className="mt-4 flex items-center justify-end gap-2">
                     <Link
                         href={route('login')}
                         className="rounded-md text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     >
-                        Already registered?
+                        Avez-vous déjà un compte?
                     </Link>
 
-                    <PrimaryButton className="ms-4" disabled={processing}>
-                        Register
+                    <PrimaryButton className="border rounded-2xl py-3 px-2 bg-blue-600 border-blue-600 hover:bg-blue-700 hover:border-blue-800 text-white" disabled={processing}>
+                        S'inscrire
                     </PrimaryButton>
                 </div>
             </form>
         </GuestLayout>
     );
 }
+
