@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+      "jsx": "react-jsx" // ou "react" si tu utilises une ancienne version de React
+    }
+  }
+  
