@@ -5,7 +5,9 @@ export default function GuestLayout({ children }) {
 return (
 <div className="flex min-h-screen flex-col items-center bg-gray-100 pt-6 sm:justify-center sm:pt-0">
     <div className="flex flex-col items-center gap-2">
-        <img id="logo" className="w-20" src="img/logo.png" alt="Logo" />
+        <a href="/">
+            <img id="logo" className="w-20" src="img/logo.png" alt="Logo" />
+        </a>
         <h2 className=" md:text-lg lg:text-xl xl:text-2xl font-black text-blue-700">
             Acolytat Saint Noé Mawaggali
         </h2>
