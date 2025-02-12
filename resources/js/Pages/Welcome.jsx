@@ -15,8 +15,16 @@ export default function Welcome({ auth }) {
             }
         >
             <Head title="Acolytat Mawaggali" />
-
-            <div className={`${auth?.user ? "py-20" : "pt-20 pb-4"} mx-2 flex-grow`}>
+            {auth?.user ? (
+                <div className="py-20">
+                connecté
+                </div>
+            ):(
+                <div className="py-20">
+                    Non connecté
+                </div>
+            )}
+            <div className={`${auth?.user ? "py-0" : "pt-2 pb-4"} mx-2 flex-grow`}>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Praesentium atque error, numquam, itaque optio maiores,
