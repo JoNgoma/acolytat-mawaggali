@@ -27,7 +27,7 @@ function Footer({ auth }) {
         >
             <div className="flex flex-row w-full gap-12 items-center justify-center">
                 <a
-                    // href={route("login")}
+                    href={route("dashboard")}
                     className="border rounded-full w-12 h-12 flex items-center justify-center bg-blue-600 border-blue-600 hover:bg-blue-700 hover:border-blue-800 text-white"
                 >
                     <svg
@@ -48,7 +48,7 @@ function Footer({ auth }) {
                     </svg>
                 </a>
                 <a
-                    // href={route("register")}
+                    // href={route("research")}
                     className="border rounded-full w-12 h-12 flex items-center justify-center bg-blue-600 border-blue-600 hover:bg-blue-700 hover:border-blue-800 text-white"
                 >
                     <svg
@@ -73,7 +73,8 @@ function Footer({ auth }) {
                 </a>
 
                 <a
-                    // href={route("register")}
+                                        href={route("people")}
+
                     className="border rounded-full w-12 h-12 flex items-center justify-center bg-blue-600 border-blue-600 hover:bg-blue-700 hover:border-blue-800 text-white"
                 >
                     <svg

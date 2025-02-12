@@ -126,7 +126,7 @@ function Header({ auth, title }) {
                                     )}
                                     <a
                                         className="border mt-3 py-2 ml-2 pl-2 hover:text-blue-700 hover:border-blue-400"
-                                        href="#"
+                                        href={route("nous")}
                                     >
                                         A propos
                                     </a>
